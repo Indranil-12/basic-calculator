@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container" id="calculator">
+        <label id ="display"class="form-label"><b>Calculator</b></label>
+        <input type="text" class="form-control" id="display_box">
+        <div class="buttonContainer">
+            <div class="row">
+                <div class="col">
+                    <button id="C" onclick="curDis=''
+                    document.querySelector('#display_box').value=curDis;">
+                        C</button>
+                </div>
+                <div class="col" >
+                    <button onclick="curDis=curDis.slice(0,-1);
+                    document.querySelector('#display_box').value=curDis;"style="padding: 0px;" >
+                    🗑️</button>
+                </div>
+                <div class="col">
+                    <button id="equal" onclick=" Disresult=eval(curDis); curDis=Disresult;
+                    document.querySelector('#display_box').value=Disresult;">=</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="1" onclick="curDis=curDis+'1'
+                    document.querySelector('#display_box').value=curDis;">1</button>
+                </div>
+                <div class="col">
+                    <button id="2"onclick="curDis=curDis+'2'
+                    document.querySelector('#display_box').value=curDis;">2</button>
+                </div>
+                <div class="col">
+                    <button id="3"onclick="curDis=curDis+'3'
+                    document.querySelector('#display_box').value=curDis;">3</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="4" onclick="curDis=curDis+'4'
+                    document.querySelector('#display_box').value=curDis;">4</button>
+                </div>
+                <div class="col">
+                    <button id="5" onclick="curDis=curDis+'5'
+                    document.querySelector('#display_box').value=curDis;">5</button>
+                </div>
+                <div class="col">
+                    <button id="6" onclick="curDis=curDis+'6'
+                    document.querySelector('#display_box').value=curDis;">6</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="7" onclick="curDis=curDis+'7'
+                    document.querySelector('#display_box').value=curDis;">7</button>
+                </div>
+                <div class="col">
+                    <button id="8" onclick="curDis=curDis+'8'
+                    document.querySelector('#display_box').value=curDis;">8</button>
+                </div>
+                <div class="col">
+                    <button id="9" onclick="curDis=curDis+'9'
+                    document.querySelector('#display_box').value=curDis;">9</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="plus" onclick="curDis=curDis+'+'
+                    document.querySelector('#display_box').value=curDis;">+</button>
+                </div>
+                <div class="col">
+                    <button id="0" onclick="curDis=curDis+'0'
+                    document.querySelector('#display_box').value=curDis;">0</button>
+                </div>
+                <div class="col">
+                    <button id="minus" onclick="curDis=curDis+'-'
+                    document.querySelector('#display_box').value=curDis;">-</button>
+                </div>
+            </div>
+            <div class="row last">
+                <div class="col">
+                    <button id="mul"onclick="curDis=curDis+'*'
+                    document.querySelector('#display_box').value=curDis;">*</button>
+                </div>
+                <div class="col">
+                    <button id="dot" onclick="curDis=curDis+'.'
+                    document.querySelector('#display_box').value=curDis;">.</button>
+                </div>
+                <div class="col">
+                    <button id="div" onclick="curDis=curDis+'/'
+                    document.querySelector('#display_box').value=curDis;">/</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="file.js" ></script>
+</body>
+
+</html>

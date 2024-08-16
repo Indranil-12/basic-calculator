@@ -1,0 +1,35 @@
+body{
+    background-color: #51e2f5;
+}
+
+#calculator {
+    margin: auto;
+    margin-top: 50px;
+    border: 2px solid black;
+    background-color: #d0bdf4;
+    border-radius: 15px;
+    border-color: #0049B7;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+#display_box{
+    margin-bottom: 10px;
+}
+#display{
+    margin: 3px auto;
+    margin-top: 10px;
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 25%;
+}
+button:hover{
+    background-color: aquamarine;
+}
+.last{
+    margin-bottom: 10px;
+}
